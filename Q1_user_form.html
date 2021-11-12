@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <form action="/table" method="POST">
+            <div class="header"><h1>Form</h1></div><hr>
+            <div class="gender">
+                <div class="left">
+                    <h2><input type="radio" name="gender" value="male">Male</h2>
+                </div>
+                <div class="right">
+                    <h2><input type="radio" name="gender" value="female">Female</h2>
+                </div>
+            </div><hr>
+            <div class="content">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter name :" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="abc@gmail.com" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="*** *** ***" required>
+                </div>
+                <div>
+                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<!------------------STYLE CSS ----------------------------------->
+<style>
+    body{
+    padding: 0;
+    margin:0;
+    align-items: center;
+    background-color: rgb(234, 229, 241);
+}
+.container{
+    width: 25%;
+    margin-left: 30em;
+    padding: 1em;
+    background-color: rgb(179, 247, 247);
+    margin-top: 5em;
+    border-radius: .3em;
+    border: rgb(223, 116, 29) solid 2px;
+}
+.header{
+    margin: 1em;
+    text-align: center;
+    color: rgb(235, 57, 96);
+}
+.gender{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+}
+ input[type=radio]{
+     border:0;
+     width: 100%;
+     height: 2em;
+     cursor: pointer;
+ }
+.content{
+    margin: 1em;
+}
+.content label{
+    margin: auto;
+}
+.content input{
+    margin: .5em;
+    width: 100%;
+    height: 2em;
+    border-radius: .3em;
+}
+.btn{
+    margin-left: .7em;
+    margin-top: 1em;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(31, 124, 185);
+    cursor: pointer;
+    color: thistle;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.btn :hover {
+    background-color: chartreuse;
+}
+
+</style>
+</html>
